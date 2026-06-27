@@ -57,7 +57,8 @@ public enum Mixins implements IMixins {
             .setApplyIf(() -> MainConfig.minecraft.enableKillEnhance)),
 
     MINECRAFT_CLIENT(Side.CLIENT, "Minecraft.AccessorEntityRenderer", "Minecraft.AccessorGuiChat",
-        "Minecraft.MixinMinecraft", "Minecraft.MixinWorldClient", "Minecraft.MixinSimpleReloadableResourceManager",
+        "Minecraft.MixinMinecraft", "Minecraft.MixinWorldClient",
+        // "Minecraft.MixinSimpleReloadableResourceManager",
         "Minecraft.MixinGuiContainer", "Minecraft.MixinGuiFlatPresets"),
 
     SUPER_CREEPER(new MixinBuilder("Mixins for Super Creeper logic")
@@ -151,15 +152,6 @@ public enum Mixins implements IMixins {
             "Gregtech.MixinRecipeGenFluids",
             "Gregtech.MixinProcessingDust",
             "Gregtech.MixinTTMultiblockBase",
-            "energymonitor.AccessorMTELapotronicSuperCapacitorEnergyMonitor",
-            "energymonitormodule.AccessorETGWEyeOfHarmonyModuleEnergyMonitor",
-            "energymonitormodule.AccessorEternalGregTechWorkshopModuleEnergyMonitor",
-            "energymonitormodule.AccessorFOGAlloyBlastSmelterModuleEnergyMonitor",
-            "energymonitormodule.AccessorFOGAlloySmelterModuleEnergyMonitor",
-            "energymonitormodule.AccessorFOGExtractorModuleEnergyMonitor",
-            "energymonitormodule.AccessorFOGSolarMuonCatalystModuleEnergyMonitor",
-            "energymonitorwirelesscustom.MixinElementCopyingEnergyMonitor",
-            "energymonitorwirelesscustom.MixinReactionFurnaceEnergyMonitor",
             "InventoryBogoSorter.MixinShortcutHandler",
             "InventoryBogoSorter.MixinSortHandler",
             "ModularUI.MixinFluidSlotWidget",
